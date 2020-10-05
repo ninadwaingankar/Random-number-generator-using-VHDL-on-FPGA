@@ -1,0 +1,16 @@
+
+#4 bit random no generator ucf file for Xilinx Spartan 6 FPGA
+
+#clk 12Mhz
+NET clk LOC = P87 | IOSTANDARD = LVCMOS33;
+ 
+# push button to generate no
+NET push LOC = P17 | IOSTANDARD = LVCMOS33; 
+
+#developed by Ninad Waingankar	
+
+#binary format output on FPGA LEDs (3 bit showing 1-6 for dice)
+NET random_num(3) loc=p16 | IOSTANDARD = LVCMOS33;
+NET random_num(2) loc=p15 | IOSTANDARD = LVCMOS33;
+NET random_num(1) loc=p12 | IOSTANDARD = LVCMOS33;
+NET random_num(0) loc=p11 | IOSTANDARD = LVCMOS33; 
